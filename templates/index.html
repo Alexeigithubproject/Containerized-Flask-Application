@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Website</title>
+  <style>
+    /* General Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    /* Background Image */
+    body {
+      background-image: url('https://unsplash.it/1600/900?random');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Overlay for better readability */
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    /* Title Styles */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    /* Form Styles */
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .signup-form input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .signup-form button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .signup-form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer Styles */
+    footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Welcome to My Website</h1>
+    <form class="signup-form">
+      <input type="text" placeholder="Enter your name" required>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <footer>
+      <p>Already have an account? <a href="#">Log in here</a></p>
+    </footer>
+  </div>
+</body>
+</html>
